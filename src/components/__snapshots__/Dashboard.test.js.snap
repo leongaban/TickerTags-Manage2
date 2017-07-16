@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard /> component should render 1`] = `
+<div
+  className="h100"
+>
+  <TopSearchBar />
+  <section
+    id="manage-dashboard"
+  >
+    <SidebarMenu />
+    <TickersTables
+      tickers={Array []}
+    />
+    <SidebarTasks />
+  </section>
+</div>
+`;

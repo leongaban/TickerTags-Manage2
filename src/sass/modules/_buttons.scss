@@ -1,0 +1,61 @@
+.btn-blue,
+.btn-green,
+.btn-gray {
+    padding: 5px 8px;
+    color: white;
+    border: 1px solid $gray5;
+    @include rounded(4px);
+}
+
+.btn-blue {
+    border: 1px solid $blue_bright;
+    background: lighten($blue_bright, 10%);;
+	background: $blue_bright;
+	&:hover { border: 1px solid $orange; background: lighten($orange, 10%); }
+	&:active { border: 1px solid $orange; background: darken($orange, 20%); }
+}
+
+.btn-green {
+	border: 1px solid $green;
+	background: lighten($green, 10%);;
+	@include rounded(4px);
+	&:hover { background: lighten($green, 20%); }
+	&:active { background: darken($green, 10%); }
+}
+
+.btn-gray {
+	background: lighten($gray4, 10%);
+	&:hover { background: lighten($gray4, 20%); }
+	&:active { background: darken($gray4, 10%); }
+}
+
+.rounded-right {
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; 
+    border-bottom-left-radius:  0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px; 
+    -moz-border-radius-bottomleft: 0;
+}
+
+.ticker {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 5px 8px;
+    width: auto;
+    font-family: Roboto Condensed;
+    font-weight: 300;
+    color: $gray5;
+    background: $gray1;
+    cursor: pointer !important;
+    clear: both;
+    @include noselect();
+    @include rounded(4px);
+    @include transition(all, .3s, ease-out);
+    &:hover { color: white; background: $gray5; }
+    &:active { color: white; background: $gray2; }
+}

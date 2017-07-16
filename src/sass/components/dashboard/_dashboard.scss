@@ -1,0 +1,18 @@
+#manage-dashboard {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 60px;
+	height: 100%;
+	@include linear-gradient($blue_light, lighten($blue_light, 10%));
+}
+
+#sidebar-left,
+#section-body,
+#sidebar-right { float: left; padding: 15px; color: $offwhite; }
+
+#section-body {
+	flex-grow: 5;
+	width: auto;
+	h1 { margin-bottom: 15px; font-size: 1.5em; }
+}

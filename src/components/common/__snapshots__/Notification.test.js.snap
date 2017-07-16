@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notification /> component should render 1`] = `
+<div
+  className="notification"
+>
+  <div
+    className="message"
+  >
+    <p>
+      All change is detectable.
+    </p>
+    <div
+      className="icon-cancel-circled-1"
+    />
+  </div>
+</div>
+`;

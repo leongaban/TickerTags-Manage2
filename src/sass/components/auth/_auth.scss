@@ -1,0 +1,51 @@
+#auth-section {
+	margin: 0 auto; width: 320px;
+	header { margin-top: 100px; padding: 0 40px 15px 40px; }
+	h1, h2 { margin: 20px 0 0 0; width: 240px; text-align: center; color: white; }
+	h1 { font-size: 1.5em; line-height: 32px; }
+	h2 { font-size: 1.2em; }
+	footer { margin-top: 20px; font-size: em(12); color: #ccc; text-align: center; }
+	.icon-user-circle-o,
+	.icon-lock {
+		opacity: .3;
+		position: absolute;
+    	top: 11px;
+    	right: 5px;
+	    font-size: 2em;
+		color: $green;
+	}
+}
+
+.app-bg {
+    position: absolute;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    background: $blue;
+    background-image: url("/static/imgs/geo.png");
+}
+
+.login-form {
+	display: flex; justify-content: center;
+
+	li { margin-bottom: 15px; }
+
+	input {
+		padding: 10px 15px; width: 200px; font-size: em(24); border: 1px solid lighten($gray4, 10%);
+		@include rounded(4px);
+	}
+
+	input.error { color: $red; border: 1px solid $red; }
+
+	button {
+		padding: 15px 20px; border: 1px solid $gray4; width: 230px; font-size: em(24); color: #fff;
+		@include rounded(4px);
+		@include box-shadow(0 5px 15px rgba(50, 50, 50, 0.2));
+		@include transition(background, .2s, ease-in-out);
+	}
+}
+
+.small-auth-link {
+	margin-bottom: 20px; padding-bottom: 20px; text-align: center; color: $green;
+	&:hover { color: lighten($green, 10%); text-decoration: underline; }
+}

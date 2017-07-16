@@ -1,0 +1,43 @@
+.tables-tickers-container {
+	table { width: 100%; }
+
+	thead tr {
+		td {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background: lighten($blue_med, 20%);
+			&:first-child { padding-left: 10px; }
+			&:last-child  { padding-right: 10px; }
+		}
+	}
+
+	tbody {
+		tr {
+			border-bottom: 1px solid darken($blue_med, 5%);
+			&:nth-child(even) { background: lighten($blue_med, 8%); }
+			&:hover { background: lighten($blue_med, 20%); }
+		}
+
+		td {
+			margin: 5px; padding: 5px; min-width: 100px;
+			&:first-child {
+				min-width: 10px;
+			}
+		}
+
+		p { position: relative; top: -5px; }
+	}
+
+	.ticker { margin-top: 5px; }
+}
+
+.trading {
+	position: relative;
+    top: -10px;
+    left: 5px;
+	@include circle(4px);
+}
+
+.trading.on { background: $green; }
+
+.trading.off { background: $gray3; }

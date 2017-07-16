@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> component should render 1`] = `
+<div
+  className="app-bg"
+>
+  <section
+    id="auth-section"
+  >
+    <header>
+      <img
+        src="static/imgs/logo.png"
+      />
+      <h1>
+        All change is detectable.
+      </h1>
+    </header>
+    <div
+      className="login-form"
+    >
+      <form
+        className="form-login"
+        onSubmit={[Function]}
+      >
+        <ul>
+          <li
+            className="rel"
+          >
+            <div
+              className="icon-user-circle-o"
+            />
+            <input
+              id="input-auth-username"
+              name="username"
+              onChange={[Function]}
+              placeholder="username"
+              type="text"
+            />
+          </li>
+          <li
+            className="rel"
+          >
+            <div
+              className="icon-lock"
+            />
+            <input
+              id="input-auth-password"
+              name="password"
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+            />
+          </li>
+          <li>
+            <button
+              className="btn-green"
+              type="submit"
+            >
+              Login
+            </button>
+          </li>
+          <li>
+            <a
+              className="small-auth-link"
+              href="/forgot"
+            >
+              <p>
+                Forgot Password
+              </p>
+            </a>
+            <footer>
+               © 
+              2017
+               TickerTags
+            </footer>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+</div>
+`;

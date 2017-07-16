@@ -1,0 +1,8 @@
+#sidebar-right {
+	flex-grow: 2;
+	min-width: 200px;
+	@include linear-gradient($blue_med, darken($blue_dark, 10%));
+}
+
+.tag-reports,
+.tickers-review { height: 50%; min-height: 400px; }

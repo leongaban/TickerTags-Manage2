@@ -1,0 +1,48 @@
+#sidebar-left {
+	flex-grow: 1;
+	max-width: 150px;
+	min-width: 140px;
+	// background: $blue_dark;
+	// @include linear-gradient($blue_dark, darken($blue_dark, 10%));
+	@include linear-gradient($blue_med, darken($blue_dark, 10%));
+
+	li {
+		float: left; margin: 8px 0; width: 100%; cursor: pointer;
+
+		&:hover {
+			.icon { background: $orange; }
+			a { color: $orange; text-decoration: none; }
+		}
+		&:active {
+			.icon { background: lighten($orange, 20%); }
+			a { color: lighten($orange, 20%); }
+		}
+	}
+
+	a {
+		float: left;
+		margin-top: 8px;
+		font-family: Roboto Condensed;
+    	font-weight: 300;
+		color: $blue_bright;
+	}
+
+	.icon {
+		float: left;
+		margin-right: 8px;
+		padding: 3px;
+		width: 24px;
+		height: 24px;
+		background: $blue_bright;
+		@include rounded(4px);
+	}
+
+	.icon-list-alt,
+	.icon-attention,
+	.icon-tags,
+	.icon-code,
+	.icon-pencil,
+	.icon-upload-cloud { left: 1px; }
+}
+
+.ico { position: relative; top: 3px; }

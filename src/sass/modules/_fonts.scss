@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('/static/fonts/fontello.eot?42663766');
+  src: url('/static/fonts/fontello.eot?42663766#iefix') format('embedded-opentype'),
+       url('/static/fonts/fontello.woff2?42663766') format('woff2'),
+       url('/static/fonts/fontello.woff?42663766') format('woff'),
+       url('/static/fonts/fontello.ttf?42663766') format('truetype'),
+       url('/static/fonts/fontello.svg?42663766#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-cog:before { content: '\e800'; } /* '' */
+.icon-back-in-time:before { content: '\e801'; } /* '' */
+.icon-code:before { content: '\e802'; } /* '' */
+.icon-list-alt:before { content: '\e803'; } /* '' */
+.icon-lock:before { content: '\e804'; } /* '' */
+.icon-blogger:before { content: '\e805'; } /* '' */
+.icon-logout:before { content: '\e806'; } /* '' */
+.icon-text-height:before { content: '\e807'; } /* '' */
+.icon-tags:before { content: '\e808'; } /* '' */
+.icon-tags-1:before { content: '\e809'; } /* '' */
+.icon-pencil:before { content: '\e80b'; } /* '' */
+.icon-upload-cloud:before { content: '\e80c'; } /* '' */
+.icon-cancel-circled-1:before { content: '\e80d'; } /* '' */
+.icon-help-circled:before { content: '\e80e'; } /* '' */
+.icon-attention:before { content: '\e80f'; } /* '' */
+.icon-arrows-cw:before { content: '\e810'; } /* '' */
+.icon-spin3:before { content: '\e832'; } /* '' */
+.icon-spin5:before { content: '\e838'; } /* '' */
+.icon-users:before { content: '\f064'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-bell-alt:before { content: '\f0f3'; } /* '' */
+.icon-sort-name-up:before { content: '\f15d'; } /* '' */
+.icon-user-circle-o:before { content: '\f2be'; } /* '' */
+
+.icon-cancel-circled {
+    cursor: pointer;
+}

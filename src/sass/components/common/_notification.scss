@@ -1,0 +1,21 @@
+.notification {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+	position: absolute;
+    width: 100%;
+    font-weight: 600;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px $gray;
+    background: $red;
+    background-image: url("/static/imgs/mesh.png");
+    cursor: pointer;
+    p, .icon-cancel-circled-1 { float: left; }
+
+    &:hover {
+        background: lighten($red, 5%);
+        .icon-cancel-circled-1 { text-shadow: 1px 1px 2px black; }
+    }
+}
